@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import { AppBar, Button, Card, Checkbox, CircularProgress, Container, createTheme, CssBaseline, Divider, FormControlLabel, FormGroup, Paper, Stack, ThemeProvider, Typography } from '@mui/material';
+import { AppBar, Button, Card, CardMedia, Checkbox, CircularProgress, Container, createTheme, CssBaseline, Divider, FormControlLabel, FormGroup, Paper, Stack, ThemeProvider, Typography } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import { Route, Routes } from 'react-router-dom';
 import background from "./img/cha-lucas.png";
@@ -116,7 +116,7 @@ function PrintList(props) {
         {props.data.map((v) => <div key={v}><FormControlLabel key={v} control={<Checkbox value={v} color="primary" className="listcha" onChange={handleCheck} />} label={v} />  <Divider /> </div>)}
       </FormGroup>
       <div style={{ display: 'flex', justifyContent: 'right', width: '100%' }}>
-        <Button variant="contained" disabled={btnDisabled} endIcon={icon} onClick={handleOnClick} >{btnText}</Button>
+        <Button variant="contained" disabled={btnDisabled || items.size === 0} endIcon={icon} onClick={handleOnClick} >{btnText}</Button>
       </div>
     </>
   );
@@ -179,10 +179,15 @@ function App() {
                 </>
               } />
               <Route path="/sucesso" element={
-                <Card variant="outlined">
+                <Card variant="outlined" style={{ padding: '1em', background: '#deefff80' }}>
                   <Typography variant="p" color="inherit">
                     MUUUITO OBRIGADO!
                   </Typography>
+                  <CardMedia
+                    component="img"
+                    alt="baby approved"
+                    image="https://media.giphy.com/media/3ohzdGySOAEL1KVlRu/giphy.gif"
+                  />
                 </Card>
               } />
             </Routes>
