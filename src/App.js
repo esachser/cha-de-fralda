@@ -1,8 +1,9 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import { AppBar, Button, Card, Checkbox, CircularProgress, Container, createTheme, CssBaseline, FormControlLabel, FormGroup, Paper, ThemeProvider, Toolbar, Typography } from '@mui/material';
+import { AppBar, Button, Card, Checkbox, CircularProgress, Container, createTheme, CssBaseline, Divider, FormControlLabel, FormGroup, Paper, Stack, ThemeProvider, Typography } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import { Route, Routes } from 'react-router-dom';
+import background from "./img/cha-lucas.png";
 
 function Loader(props) {
   const [data, setData] = useState(undefined);
@@ -61,7 +62,7 @@ function PrintList(props) {
   const [btnDisabled, setBtnDisabled] = useState(false);
   const [icon, setIcon] = useState(<SendIcon />);
   const [btnText, setBtnText] = useState('Enviar');
-  function handleOnClick(e) {
+  function handleOnClick() {
     items.forEach(element => {
       console.log(element);
     });
@@ -111,8 +112,8 @@ function PrintList(props) {
   }
   return (
     <>
-      <FormGroup>
-        {props.data.map((v) => <FormControlLabel key={v} control={<Checkbox value={v} className="listcha" onChange={handleCheck} />} label={v} />)}
+      <FormGroup style={{ padding: '1em' }} >
+        {props.data.map((v) => <div key={v}><FormControlLabel key={v} control={<Checkbox value={v} color="primary" className="listcha" onChange={handleCheck} />} label={v} />  <Divider /> </div>)}
       </FormGroup>
       <div style={{ display: 'flex', justifyContent: 'right', width: '100%' }}>
         <Button variant="contained" disabled={btnDisabled} endIcon={icon} onClick={handleOnClick} >{btnText}</Button>
@@ -121,53 +122,71 @@ function PrintList(props) {
   );
 }
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    text: {
+      primary: '#2a4458'
+    }
+  },
+  spacing: 5,
+});
 
 function App() {
   return (
     <ThemeProvider theme={theme} >
       <CssBaseline />
       <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
-        <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
-          <AppBar
-            position="absolute"
-            color="default"
-            elevation={0}
-            sx={{
-              position: 'relative',
-              borderBottom: (t) => `1px solid ${t.palette.divider}`,
-            }}
-          >
-            <Toolbar>
-              <Typography variant="h4" color="inherit" noWrap>
+        <Paper variant="outlined" style={{ background: '#deefff30' }} sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }} >
+          <Stack spacing={2}>
+            <AppBar
+              position="absolute"
+              color="default"
+              elevation={0}
+              sx={{
+                position: 'relative',
+                borderBottom: (t) => `1px solid ${t.palette.divider}`,
+              }}
+              style={{
+                padding: '1em',
+                background: '#deefff',
+                backgroundImage: `url(${background})`,
+                backgroundSize: '100% 101%',
+                paddingTop: '98%',
+              }}
+            >
+              {/* <Toolbar>
+              <Typography variant="h4" color="#6bacde" noWrap>
                 Chá do Lucas
               </Typography>
-            </Toolbar>
-          </AppBar>
+            </Toolbar> */}
+            </AppBar>
 
-          <Routes>
-            <Route path="/" element={
-              <>
+            <Routes>
+              <Route path="/" element={
+                <>
+
+                  <Card variant="outlined" style={{ padding: '1em', background: '#deefff80' }} >
+                    <Typography variant="p" color="inherit">
+                      Explicar o chá do luquinhas, escolha, bla bla bla. <br />
+                      Outra linha.
+                    </Typography>
+                  </Card>
+
+                  <Loader>
+                    <PrintList />
+                  </Loader>
+
+                </>
+              } />
+              <Route path="/sucesso" element={
                 <Card variant="outlined">
-                  <Typography variant="p" color="inherit" noWrap>
-                    Explicar o chá do luquinhas, escolha, bla bla bla. <br />
-                    Outra linha.
+                  <Typography variant="p" color="inherit">
+                    MUUUITO OBRIGADO!
                   </Typography>
                 </Card>
-
-                <Loader>
-                  <PrintList />
-                </Loader>
-              </>
-            } />
-            <Route path="/sucesso" element={
-              <Card variant="outlined">
-                <Typography variant="p" color="inherit" noWrap>
-                  MUUUITO OBRIGADO!
-                </Typography>
-              </Card>
-            } />
-          </Routes>
+              } />
+            </Routes>
+          </Stack>
         </Paper>
       </Container>
     </ThemeProvider>
