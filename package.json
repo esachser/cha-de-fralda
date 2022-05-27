@@ -23,7 +23,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage" : "https://esachser.github.io/cha-de-frauda",
+  "homepage" : "https://esachser.github.io/cha-de-fralda",
   "eslintConfig": {
     "extends": [
       "react-app",
