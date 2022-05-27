@@ -103,7 +103,7 @@ function PrintList(props) {
       })
       .finally(() => {
         // setTimeout(() => {setBtnDisabled(false);}, 10000);
-        window.location = `${process.env.PUBLIC_URL}/sucesso`
+        window.location = `${process.env.PUBLIC_URL}/sucesso`;
         setBtnDisabled(false);
         setIcon(<SendIcon />);
         setBtnText('Enviar');
