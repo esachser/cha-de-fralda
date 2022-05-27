@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/cha-de-frauda/static/css/main.964fdded.css",
-    "main.js": "/cha-de-frauda/static/js/main.ef99754d.js",
+    "main.js": "/cha-de-frauda/static/js/main.35058afa.js",
     "static/js/787.d554027b.chunk.js": "/cha-de-frauda/static/js/787.d554027b.chunk.js",
     "static/media/cha-lucas.png": "/cha-de-frauda/static/media/cha-lucas.2b4d0230638b7eb93e4f.png",
     "index.html": "/cha-de-frauda/index.html",
     "main.964fdded.css.map": "/cha-de-frauda/static/css/main.964fdded.css.map",
-    "main.ef99754d.js.map": "/cha-de-frauda/static/js/main.ef99754d.js.map",
+    "main.35058afa.js.map": "/cha-de-frauda/static/js/main.35058afa.js.map",
     "787.d554027b.chunk.js.map": "/cha-de-frauda/static/js/787.d554027b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.964fdded.css",
-    "static/js/main.ef99754d.js"
+    "static/js/main.35058afa.js"
   ]
 }
