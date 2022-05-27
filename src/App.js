@@ -103,11 +103,11 @@ function PrintList(props) {
       })
       .finally(() => {
         // setTimeout(() => {setBtnDisabled(false);}, 10000);
-        // setBtnDisabled(false);
-        // setIcon(<SendIcon />);
-        // setBtnText('Enviar');
-        // Rotear para sucesso, obrigado
         window.location = `${process.env.PUBLIC_URL}/sucesso`
+        setBtnDisabled(false);
+        setIcon(<SendIcon />);
+        setBtnText('Enviar');
+        // Rotear para sucesso, obrigado
       });
   }
   return (
