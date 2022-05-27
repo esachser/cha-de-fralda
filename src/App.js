@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import { AppBar, Button, Card, CardMedia, Checkbox, CircularProgress, Container, createTheme, CssBaseline, Divider, FormControlLabel, FormGroup, Paper, Stack, ThemeProvider, Typography } from '@mui/material';
+import { AppBar, Button, Card, CardMedia, Checkbox, CircularProgress, Container, createTheme, CssBaseline, Divider, FormControlLabel, FormGroup, Link, Paper, Stack, ThemeProvider, Typography } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import { Route, Routes } from 'react-router-dom';
 import background from "./img/cha-lucas.png";
@@ -165,10 +165,14 @@ function App() {
               <Route path="/" element={
                 <>
 
-                  <Card variant="outlined" style={{ padding: '1em', background: '#deefff80' }} >
+                  <Card variant="outlined" style={{ padding: '1em', background: '#deefff80', textAlign: 'justify' }} >
                     <Typography variant="p" color="inherit">
-                      Explicar o chá do luquinhas, escolha, bla bla bla. <br />
-                      Outra linha.
+                    Mamãe e papai preparam uma lista de sugestões de presentes.<br />
+                    É só escolher um item, selecionar ele clicando no quadradinho e depois clicar em enviar.<br />
+                    Outra sugestão de presente são as <b>fraldas ecológicas</b>,
+                    pois mamãe e papai tentarão usar a menor quantidade possível de fraldas descartáveis.<br />
+                    Nesse link tem opções de fraldas ecológicas e mais outros itens:<br />
+                    <Link href="https://bit.ly/FraldasEcologicasLucas" target="_blank" rel="noopener">Opções de fraldas</Link>
                     </Typography>
                   </Card>
 
@@ -179,9 +183,12 @@ function App() {
                 </>
               } />
               <Route path="/sucesso" element={
-                <Card variant="outlined" style={{ padding: '1em', background: '#deefff80' }}>
-                  <Typography variant="p" color="inherit">
-                    MUUUITO OBRIGADO!
+                <Card variant="outlined" style={{ padding: '1em', background: '#deefff80', textAlign: 'center' }}>
+                  <Typography variant="h6" color="inherit">
+                  Mamãe, papai e eu agradecemos!<br />
+                  Esperamos você no dia 26/06 💙
+                  <br />
+                  <br />
                   </Typography>
                   <CardMedia
                     component="img"
