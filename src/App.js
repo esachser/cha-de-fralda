@@ -107,7 +107,7 @@ function PrintList(props) {
         // setIcon(<SendIcon />);
         // setBtnText('Enviar');
         // Rotear para sucesso, obrigado
-        window.location = `{process.env.PUBLIC_URL}/sucesso`
+        window.location = `${process.env.PUBLIC_URL}/sucesso`
       });
   }
   return (
