@@ -166,8 +166,8 @@ function App() {
 
                   <Card variant="outlined" style={{ padding: '1em', background: '#deefff80', textAlign: 'justify' }} >
                     <Typography variant="p" color="inherit">
-                    Mamãe e papai preparam uma lista de sugestões de presentes.<br />
-                    É só escolher um item, selecionar ele clicando no quadradinho e depois clicar em enviar.<br />
+                    Mamãe e papai prepararam uma lista de sugestões de presentes.<br />
+                    É só escolher um item, selecionar ele clicando no quadradinho e, depois, clicar em enviar.<br />
                     Outra sugestão de presente são as <b>fraldas ecológicas</b>,
                     pois mamãe e papai tentarão usar a menor quantidade possível de fraldas descartáveis.<br />
                     Nesse link tem opções de fraldas ecológicas e mais outros itens:<br />
