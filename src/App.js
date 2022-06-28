@@ -168,14 +168,17 @@ function App() {
                     <Typography variant="p" color="inherit">
                       Mamãe e papai tentarão usar a menor quantidade possível de fraldas descartáveis.
                       Por isso, a principal sugestão de presente são é fraldas ecológicas.
-                      Nesse link tem opções de fraldas ecológicas da <Link href="https://www.instagram.com/paninhosdoicaro/" target="_blank" rel="noopener">@paninhosdoicaro</Link>:<br />
-                      <Typography variant="h5" color="inherit">
-                        <Link href="https://bit.ly/FraldasEcologicasLucas" target="_blank" rel="noopener">
-                          <Button variant="contained">
-                            Opções de fraldas ecológicas
-                          </Button>
-                        </Link>
-                      </Typography>
+                      <br />
+                      <br />
+                      <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }} >
+                      <Link href="https://bit.ly/FraldasEcologicasLucas" target="_blank" rel="noopener">
+                        <Button variant="contained">
+                          Opções de fraldas ecológicas
+                        </Button>
+                      </Link>
+                      </div>
+                      <br />
+                      No link acima tem opções de fraldas ecológicas da <Link href="https://www.instagram.com/paninhosdoicaro/" target="_blank" rel="noopener">@paninhosdoicaro</Link>
                     </Typography>
                   </Card>
 
