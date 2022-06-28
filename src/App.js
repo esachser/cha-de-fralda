@@ -166,12 +166,23 @@ function App() {
 
                   <Card variant="outlined" style={{ padding: '1em', background: '#deefff80', textAlign: 'justify' }} >
                     <Typography variant="p" color="inherit">
-                    Mamãe e papai prepararam uma lista de sugestões de presentes.<br />
-                    É só escolher um item, selecionar ele clicando no quadradinho e, depois, clicar em enviar.<br />
-                    Outra sugestão de presente são as <b>fraldas ecológicas</b>,
-                    pois mamãe e papai tentarão usar a menor quantidade possível de fraldas descartáveis.<br />
-                    Nesse link tem opções de fraldas ecológicas e mais outros itens:<br />
-                    <Link href="https://bit.ly/FraldasEcologicasLucas" target="_blank" rel="noopener">Opções de fraldas</Link>
+                      Mamãe e papai tentarão usar a menor quantidade possível de fraldas descartáveis.
+                      Por isso, a principal sugestão de presente são é fraldas ecológicas.
+                      Nesse link tem opções de fraldas ecológicas da <Link href="https://www.instagram.com/paninhosdoicaro/" target="_blank" rel="noopener">@paninhosdoicaro</Link>:<br />
+                      <Typography variant="h5" color="inherit">
+                        <Link href="https://bit.ly/FraldasEcologicasLucas" target="_blank" rel="noopener">
+                          <Button variant="contained">
+                            Opções de fraldas ecológicas
+                          </Button>
+                        </Link>
+                      </Typography>
+                    </Typography>
+                  </Card>
+
+                  <Card variant="outlined" style={{ padding: '1em', background: '#deefff80', textAlign: 'justify' }} >
+                    <Typography variant="p" color="inherit">
+                      Além disso, mamãe e papai também prepararam uma listinha com outras sugestões de presentes.<br />
+                      É só escolher um item, selecionar ele clicando no quadradinho e, depois, clicar em enviar.
                     </Typography>
                   </Card>
 
@@ -184,10 +195,10 @@ function App() {
               <Route path="/sucesso" element={
                 <Card variant="outlined" style={{ padding: '1em', background: '#deefff80', textAlign: 'center' }}>
                   <Typography variant="h6" color="inherit">
-                  Mamãe, papai e eu agradecemos!<br />
-                  Esperamos você no dia 26/06 💙
-                  <br />
-                  <br />
+                    Mamãe, papai e eu agradecemos!<br />
+                    Esperamos você no dia 25/07 💙
+                    <br />
+                    <br />
                   </Typography>
                   <CardMedia
                     component="img"
