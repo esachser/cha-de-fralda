@@ -167,7 +167,7 @@ function App() {
                   <Card variant="outlined" style={{ padding: '1em', background: '#deefff80', textAlign: 'justify' }} >
                     <Typography variant="p" color="inherit">
                       Mamãe e papai tentarão usar a menor quantidade possível de fraldas descartáveis.
-                      Por isso, a principal sugestão de presente são é fraldas ecológicas.
+                      Por isso, a principal sugestão de presente é fraldas ecológicas.
                       <br />
                       <br />
                       <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }} >
