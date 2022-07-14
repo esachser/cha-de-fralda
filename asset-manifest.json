@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/cha-de-fralda/static/css/main.964fdded.css",
-    "main.js": "/cha-de-fralda/static/js/main.10735527.js",
+    "main.js": "/cha-de-fralda/static/js/main.ca5c25b8.js",
     "static/js/787.d554027b.chunk.js": "/cha-de-fralda/static/js/787.d554027b.chunk.js",
     "static/media/cha-lucas.png": "/cha-de-fralda/static/media/cha-lucas.2b4d0230638b7eb93e4f.png",
     "index.html": "/cha-de-fralda/index.html",
     "main.964fdded.css.map": "/cha-de-fralda/static/css/main.964fdded.css.map",
-    "main.10735527.js.map": "/cha-de-fralda/static/js/main.10735527.js.map",
+    "main.ca5c25b8.js.map": "/cha-de-fralda/static/js/main.ca5c25b8.js.map",
     "787.d554027b.chunk.js.map": "/cha-de-fralda/static/js/787.d554027b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.964fdded.css",
-    "static/js/main.10735527.js"
+    "static/js/main.ca5c25b8.js"
   ]
 }
